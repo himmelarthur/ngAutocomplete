@@ -94,7 +94,7 @@ angular.module( "ngAutocomplete", [])
 
                 controller.$setViewValue(element.val());
                 if (typeof scope.options.callback === "function") {
-                  callback(result);
+                  scope.options.callback(result);
                 }
               });
             }
